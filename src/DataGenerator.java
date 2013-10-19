@@ -27,7 +27,7 @@ public class DataGenerator {
                     + "you wish to write.");
         } else {
             try {
-                writeToFile(args[0], getRandomInts(Integer.valueOf(args[1])));
+                FileHelper.writeToFile(args[0], getRandomInts(Integer.valueOf(args[1])));
             } catch (IOException ex) {
                 System.out.println("Could not write to file " + args[0]
                     + "\nTry a different filename");
@@ -52,27 +52,5 @@ public class DataGenerator {
         }
 
         return randoms;
-    }
-
-    /**
-     * Writes the given <code>values</code> to the file specified by the
-     * <code>String</code> <code>filename</code>, where each value will be
-     * separated by a space.
-     * @param filename Name of file to write to - will be created if needed
-     * @param values Values to write to file
-     * @throws IOException if cannot write to given file
-     */
-    private static void writeToFile(String filename, ArrayList<Integer> values) throws IOException {
-        Writer writer = null;
-
-        try {
-            writer = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream(filename), "utf-8"));
-            for (Integer value : values) {
-                writer.write(value.toString() + " ");
-            }
-        } finally {
-            try { writer.close(); } catch (Exception ex) {}
-        }
     }
 }

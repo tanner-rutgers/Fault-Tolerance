@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FaultTolerance.iml" filepath="$PROJECT_DIR$/FaultTolerance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NativeMethods/NativeMethods.iml" filepath="$PROJECT_DIR$/../NativeMethods/NativeMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Watchdog/Watchdog.iml" filepath="$PROJECT_DIR$/../Watchdog/Watchdog.iml" />
     </modules>
   </component>
 </project>
