@@ -2,7 +2,7 @@
  * Class that uses various methods to evaluate whether or not
  * one Array is a sorted version of another.
  *
- * @author Tanner Rutgers
+ * @author Tanner Rutgers (trutgers)
 */
 public class SortedCheck {
 
@@ -74,5 +74,10 @@ public class SortedCheck {
         }
 
         return sum1 == sum2;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + " Class Object";
     }
 }

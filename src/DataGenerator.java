@@ -19,11 +19,13 @@ public class DataGenerator {
 
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.out.println("Invalid Syntax. Please use:\n\n"
-                    + "\tjava DataGenerator <filename> <datasize>\n\n"
-                    + "Where <filename> is the name of the file in the current directory \n"
-                    + "you wish to write to and <datasize> is the number of random integers \n"
-                    + "you wish to write.");
+            StringBuilder sb = new StringBuilder();
+            sb.append("Invalid Syntax. Please use:\n\n")
+                    .append("\tjava DataGenerator <filename> <datasize>\n\n")
+                    .append("Where <filename> is the name of the file in the current directory \n")
+                    .append("you wish to write to and <datasize> is the number of random integers \n")
+                    .append("you wish to write.");
+            System.out.println(sb.toString());
         } else {
             try {
                 FileHelper.writeToFile(args[0], getRandomInts(Integer.parseInt(args[1])));
@@ -37,7 +39,7 @@ public class DataGenerator {
 
     /**
      * Return an ArrayList containing <code>size</code> random integers
-     * from 0 (inclusive) to 256 (exclusive)
+     * from 0 (inclusive) to 1000 (exclusive)
      * @param size Number of random integers to include
      * @return the ArrayList of random integers, empty ArrayList if
      *         <code>size</code> is 0.
@@ -47,9 +49,14 @@ public class DataGenerator {
         Random random = new Random();
 
         for (int i = 0; i<size; i++) {
-            randoms[i] = random.nextInt(255);
+            randoms[i] = random.nextInt(1000);
         }
 
         return randoms;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + "Class Object";
     }
 }

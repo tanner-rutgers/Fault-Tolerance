@@ -2,6 +2,8 @@ import java.io.*;
 
 /**
  * A helper class for reading from and writing to files
+ *
+ * @author Tanner Rutgers (trutgers)
  */
 public class FileHelper {
 
@@ -47,5 +49,10 @@ public class FileHelper {
         } finally {
             try { writer.close(); } catch (NullPointerException ex) {}
         }
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + "Class Object";
     }
 }

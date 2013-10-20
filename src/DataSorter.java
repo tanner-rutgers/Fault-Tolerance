@@ -10,6 +10,8 @@ import java.util.Timer;
  * these values using a primary sorting method, with backup method(s)
  * in the case the primary method fails.  Sorted values will be written
  * to a new file specified on the command line.
+ *
+ * @author Tanner Rutgers (trutgers)
  */
 public class DataSorter {
 
@@ -19,14 +21,16 @@ public class DataSorter {
 
     public static void main(String[] args) {
         if (args.length != 5) {
-            System.out.println("Invalid Syntax. Please use:\n\n"
-                    + "\tjava DataSorter <inFile> <outFile> <primFail> <backFail> <timeout> \n\n"
-                    + "Where:\n\n"
-                    + "\tinFile = input file with values to sort\n"
-                    + "\toutFile = output file to write sorted values to\n"
-                    + "primFail = failure probability of primary sorting routine\n"
-                    + "backFail = failure probability of backup sorting routine\n"
-                    + "timeout = number of seconds to wait for each sorting routine\n");
+            StringBuilder sb = new StringBuilder();
+            sb.append("Invalid Syntax. Please use:\n\n")
+                    .append("\tjava DataSorter <inFile> <outFile> <primFail> <backFail> <timeout> \n\n")
+                    .append("Where:\n\n")
+                    .append("\tinFile = input file with values to sort\n")
+                    .append("\toutFile = output file to write sorted values to\n")
+                    .append("primFail = failure probability of primary sorting routine\n")
+                    .append("backFail = failure probability of backup sorting routine\n")
+                    .append("timeout = number of seconds to wait for each sorting routine\n");
+            System.out.println(sb.toString());
         } else {
             // Collect command line arguments
             String inFile = args[0];
@@ -46,18 +50,18 @@ public class DataSorter {
                 // Run primary sorting algorithm
                 runSort(primarySort, timeout, primFail);
                 try {
-                    // Run adjudicator on results of primary sorting algorithm, exit if successful
-                    if (SortedCheck.checkSorted(originalValues, primarySort.getSortedValues(), true)) {
+                    // Check if primary sorter finished and run adjudicator results, exit if successful
+                    if (primarySort.didFinish() && SortedCheck.checkSorted(originalValues, primarySort.getSortedValues(), true)) {
                         FileHelper.writeToFile(outFile, primarySort.getSortedValues());
                         System.exit(0);
                     } else {
                         // Primary failed, print message indicating so
-                        System.out.println("Primary sorter '" + primarySort + "' failed.");
+                        System.out.println("Primary sorter '" + primarySort.getClass().getName() + "' failed.");
                         // Run all backups one by one
                         for (Sorter backupSort : backupSorts) {
                             runSort(backupSort, timeout, backFail);
-                            // Run adjudicator on results of current backup algorithm, exit if successful
-                            if (SortedCheck.checkSorted(originalValues, backupSort.getSortedValues(), true)) {
+                            // Check if backup sorter finished and run adjudicator results, exit if successful
+                            if (backupSort.didFinish() && SortedCheck.checkSorted(originalValues, backupSort.getSortedValues(), true)) {
                                 FileHelper.writeToFile(outFile, backupSort.getSortedValues());
                                 System.exit(0);
                             }
@@ -95,6 +99,24 @@ public class DataSorter {
             sorter.join();
             t.cancel();
         } catch (InterruptedException e) {}
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        String NEW_LINE = System.getProperty("line.separator");
+
+        result.append(this.getClass().getName() + " Object {" + NEW_LINE);
+        result.append("Original Values size: ");
+        result.append((originalValues != null ? originalValues.length : "0") + NEW_LINE);
+        result.append("Primary sorting routine: " + primarySort.getClass().getName() + NEW_LINE);
+        for (int i = 0; i < backupSorts.length; i++) {
+            result.append("Backup sorting routine " + i + ": ");
+            result.append(backupSorts[i].getClass().getName() + NEW_LINE);
+        }
+        result.append("}");
+
+        return result.toString();
     }
 
 }
