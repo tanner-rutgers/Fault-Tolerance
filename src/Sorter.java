@@ -24,6 +24,7 @@ public abstract class Sorter<T extends Comparable<? super T>> extends Thread{
      * Called by Thread.start()
      * Will call concrete implementation's sort method
      */
+    @Override
     public void run() {
         this.sort();
     }

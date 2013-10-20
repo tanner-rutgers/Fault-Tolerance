@@ -1,12 +1,15 @@
-public class InsertionSort<T extends Comparable<? super T>> extends Sorter<T>{
+public class CInsertionSort<T extends Comparable<? super T>> extends Sorter<T>{
 
-
+    @Override
     public void sort(T[]... values) {
         if (values.length == 1) sortedValues = values[0];
         if (this.sortedValues == null) return;
 
-
+        memHits = insertSort(sortedValues);
+        sortComplete = !virtualHardwareFailure();
     }
+
+    private native int insertSort(T[] values);
 
     @Override
     public String toString() {

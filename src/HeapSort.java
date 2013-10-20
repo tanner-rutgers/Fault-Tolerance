@@ -25,7 +25,7 @@ public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
         }
 
         memHits++;
-        this.sortComplete = !virtualHardwareFailure();
+        sortComplete = !virtualHardwareFailure();
     }
 
     /**
