@@ -1,10 +1,10 @@
-public class InsertionSort extends Sorter{
+public class InsertionSort<T extends Comparable<? super T>> extends Sorter<T>{
 
 
-    public void sort(Object... values) {
-        if (values.length == 1) setValues((Integer [])values[0]);
+    public void sort(T[]... values) {
+        if (values.length == 1) setValues(values[0]);
         if (this.originalValues == null) return;
 
-        this.sortedValues = new Integer[this.originalValues.length];
+
     }
 }

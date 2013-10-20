@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.Timer;
 
@@ -27,6 +28,7 @@ public class DataSorter {
                     + "backFail = failure probability of backup sorting routine\n"
                     + "timeout = number of seconds to wait for each sorting routine\n");
         } else {
+            // Collect command line arguments
             String inFile = args[0];
             String outFile = args[1];
             Double primFail = Double.parseDouble(args[2]);
@@ -34,25 +36,35 @@ public class DataSorter {
             Integer timeout = Integer.parseInt(args[4]);
 
             try {
+                // Collect values to be sorted from specified file
                 String[] values = FileHelper.readFile(inFile);
+                originalValues = new Integer[values.length];
                 for (int i = 0; i<values.length; i++) {
                     originalValues[i] = Integer.parseInt(values[i]);
                 }
+
+                // Run primary sorting algorithm
                 runSort(primarySort, timeout, primFail);
                 try {
+                    // Run adjudicator on results of primary sorting algorithm, exit if successful
                     if (SortedCheck.checkSorted(originalValues, primarySort.getSortedValues(), true)) {
                         FileHelper.writeToFile(outFile, primarySort.getSortedValues());
                         System.exit(0);
                     } else {
+                        // Primary failed, print message indicating so
                         System.out.println("Primary sorter '" + primarySort + "' failed.");
+                        // Run all backups one by one
                         for (Sorter backupSort : backupSorts) {
                             runSort(backupSort, timeout, backFail);
+                            // Run adjudicator on results of current backup algorithm, exit if successful
                             if (SortedCheck.checkSorted(originalValues, backupSort.getSortedValues(), true)) {
                                 FileHelper.writeToFile(outFile, backupSort.getSortedValues());
                                 System.exit(0);
                             }
                         }
+                        // All backups failed. Print failure message and delete output file.
                         System.out.println("All backup sorters failed.");
+                        (new File(outFile)).delete();
                     }
                 } catch (IOException ex) {
                     System.out.println("Could not write to file " + outFile);

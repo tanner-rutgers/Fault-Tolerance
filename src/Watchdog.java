@@ -25,7 +25,6 @@ Thread watched;
 	public void run() {
 		
 		watched.stop();
-		System.out.println("You're dead!");
 	}
 
 }

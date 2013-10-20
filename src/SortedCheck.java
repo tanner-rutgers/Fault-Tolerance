@@ -18,8 +18,14 @@ public class SortedCheck {
      *          sorted version of <code>original</code> based on
      *          mentioned conditions.
      */
-    public static <T extends Comparable<? super T>> boolean checkSorted(final T[] original, final T[] sorted, boolean increasing) {
-        return (original.length == sorted.length) && checkSum(original, sorted) && checkMonotonic(sorted, increasing);
+    public static <T extends Comparable<? super T>> boolean checkSorted(final T[] original, final T[] sorted, Boolean increasing) {
+        if (sorted == null || increasing == null) return false;
+
+        if (original != null) {
+            return checkMonotonic(sorted, increasing) && checkSum(original, sorted) && sorted.length == original.length;
+        }
+
+        return checkMonotonic(sorted, increasing);
     }
 
     /**

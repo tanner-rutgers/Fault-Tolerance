@@ -2,19 +2,22 @@
  * An implementation of Thread that is used for
  * sorting algorithms
  */
-public abstract class Sorter extends Thread{
+public abstract class Sorter<T extends Comparable<? super T>> extends Thread{
 
-    protected Integer[] originalValues;
-    protected Integer[] sortedValues;
-    protected double failureProbability;
+    protected T[] originalValues;
+    protected T[] sortedValues;
+    protected Boolean ascendingOrder = true;
+    protected Double failureProbability;
 
-    public Integer[] getSortedValues() {
-        return sortedValues;
+    public T[] getSortedValues() { return sortedValues; }
+
+    public void setValues(T[] values) {
+        this.originalValues = values;
+        this.sortedValues = values;
     }
 
-    public void setFailureProbability(Double failureProb) {
-        this.failureProbability = failureProb;
-    }
+    public void setAscendingOrder(Boolean asc) { this.ascendingOrder = asc; }
+    public void setFailureProbability(Double prob) { this.failureProbability = prob; }
 
     /**
      * Called by Thread.start()
@@ -22,11 +25,6 @@ public abstract class Sorter extends Thread{
      */
     public void run() {
         this.sort();
-    }
-
-
-    public void setValues(Integer[] values) {
-        this.originalValues = values.clone();
     }
 
     /**
@@ -37,5 +35,5 @@ public abstract class Sorter extends Thread{
      * stored in the global variable <code>sortedValues</code>
      * @param values Optional list of objects to sort
      */
-    public abstract void sort(Object... values);
+    public abstract void sort(T[]... values);
 }
