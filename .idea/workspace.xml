@@ -8,7 +8,7 @@
     <ignored path="FaultTolerance.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/DataGenerator.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382297239794" ignored="false" />
-    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382324021366" ignored="false" />
+    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382324855243" ignored="false" />
     <file path="/fragment.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382311364365" ignored="false" />
     <file path="/TestStopMethod.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382208631585" ignored="false" />
     <file path="/Driver.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382229363662" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="/InsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304420333" ignored="false" />
     <file path="/Sorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323374452" ignored="false" />
     <file path="/SortedIntegerCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382232774453" ignored="false" />
-    <file path="/SortedCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382324846717" ignored="false" />
+    <file path="/SortedCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382325071864" ignored="false" />
     <file path="/CInsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323585425" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,7 @@
       <file leaf-file-name="SortedCheck.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SortedCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="68" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.4187192">
+            <state line="38" column="77" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.4187192">
               <folding />
             </state>
           </provider>
@@ -553,7 +553,11 @@
       <created>1382324024701</created>
       <updated>1382324024701</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Cleanup">
+      <created>1382324857412</created>
+      <updated>1382324857412</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SortedCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="68" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.4187192">
+        <state line="38" column="77" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.4187192">
           <folding />
         </state>
       </provider>

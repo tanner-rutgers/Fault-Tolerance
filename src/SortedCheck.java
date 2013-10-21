@@ -36,7 +36,7 @@ public class SortedCheck {
      *                   false for decreasing order
      * @return true if monotonic, false otherwise
      */
-    private static <T extends Comparable<? super T>> Boolean checkMonotonic(final T[] sorted, boolean increasing) {
+    private static <T extends Comparable<? super T>> Boolean checkMonotonic(final T[] sorted, Boolean increasing) {
         if (sorted.length <= 0) return false;
 
         if (increasing) {
