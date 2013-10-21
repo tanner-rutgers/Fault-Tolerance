@@ -17,7 +17,7 @@ public class DataSorter {
 
     static Integer[] originalValues;
     static final Sorter primarySort = new HeapSort();
-    static final Sorter[] backupSorts = new Sorter[] { new InsertionSort() };
+    static final Sorter[] backupSorts = new Sorter[] { new CInsertionSort() };
 
     public static void main(String[] args) {
         if (args.length != 5) {
@@ -27,9 +27,9 @@ public class DataSorter {
                     .append("Where:\n\n")
                     .append("\tinFile = input file with values to sort\n")
                     .append("\toutFile = output file to write sorted values to\n")
-                    .append("primFail = failure probability of primary sorting routine\n")
-                    .append("backFail = failure probability of backup sorting routine\n")
-                    .append("timeout = number of seconds to wait for each sorting routine\n");
+                    .append("\tprimFail = failure probability of primary sorting routine\n")
+                    .append("\tbackFail = failure probability of backup sorting routine\n")
+                    .append("\ttimeout = number of seconds to wait for each sorting routine\n");
             System.out.println(sb.toString());
         } else {
             // Collect command line arguments

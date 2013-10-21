@@ -1,15 +1,31 @@
-public class CInsertionSort<T extends Comparable<? super T>> extends Sorter<T>{
+public class CInsertionSort extends Sorter{
 
     @Override
-    public void sort(T[]... values) {
-        if (values.length == 1) sortedValues = values[0];
-        if (this.sortedValues == null) return;
+    public void sort(Integer[]... values) {
+        if (values.length == 1) sortedValues = values[0];                               memHits+=3;
+        if (this.sortedValues == null) return;                                          memHits++;
 
-        memHits = insertSort(sortedValues);
+        // Create copy of sortedValues as a primitive int array
+        int[] sortedInts = new int[sortedValues.length];                                memHits+=2;
+        for (int i = 0; i < sortedInts.length; i++) {                                   memHits+=2;
+            sortedInts[i] = sortedValues[i];                                            memHits+=2;
+        }
+
+        // Load dynamic library and call C sorting method
+        System.loadLibrary("insertSort");
+        memHits += insertSort(sortedInts);
+
+        // Convert primitive int array back to Integers
+        for (int i = 0; i < sortedInts.length; i++) {                                   memHits+=2;
+            sortedValues[i] = sortedInts[i];                                            memHits+=2;
+        }
+
+        // Sort complete. Set flag to true unless hardware failure
+        memHits++;
         sortComplete = !virtualHardwareFailure();
     }
 
-    private native int insertSort(T[] values);
+    private native int insertSort(int[] values);
 
     @Override
     public String toString() {

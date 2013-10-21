@@ -4,19 +4,19 @@
  *
  * @author Tanner Rutgers (trutgers)
  */
-public abstract class Sorter<T extends Comparable<? super T>> extends Thread{
+public abstract class Sorter extends Thread{
 
-    protected T[] sortedValues;                     // Potentially sorted values
+    protected Integer[] sortedValues;               // Potentially sorted values
     protected Boolean ascendingOrder = true;        // Ascending order flag
     protected Double failureProbability;            // Probability of memory access failure
 
     protected Boolean sortComplete = false;         // Sort completed flag
     protected int memHits = 0;                      // Number of memory accesses
 
-    public T[] getSortedValues() { return sortedValues; }
+    public Integer[] getSortedValues() { return sortedValues; }
     public Boolean didFinish() { return sortComplete; }
 
-    public void setValues(T[] values) { this.sortedValues = values.clone(); }
+    public void setValues(Integer[] values) { this.sortedValues = values.clone(); }
     public void setAscendingOrder(Boolean asc) { this.ascendingOrder = asc; }
     public void setFailureProbability(Double prob) { this.failureProbability = prob; }
 
@@ -52,7 +52,7 @@ public abstract class Sorter<T extends Comparable<? super T>> extends Thread{
      * <code>originalValues</code>.  Sorted values should be
      * stored in the global variable <code>sortedValues</code>
      */
-    public abstract void sort(T[]... values);
+    public abstract void sort(Integer[]... values);
 
     @Override
     public String toString() {

@@ -4,7 +4,7 @@
  *
  * @author Tanner Rutgers (trutgers)
  */
-public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
+public class HeapSort extends Sorter{
 
     private int heapSize;
 
@@ -13,10 +13,11 @@ public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
      * Details about arguments can be found in <code>Sorter</code>
      */
     @Override
-    public void sort(T[]... values) {
-        if (values.length == 1) sortedValues = values[0];                                   memHits+=2;
+    public void sort(Integer[]... values) {
+        if (values.length == 1) sortedValues = values[0];                                   memHits+=3;
         if (sortedValues == null) return;                                                   memHits++;
 
+        // Build max heap and run a heap sort on it
         buildHeap();
         for (int i = sortedValues.length-1; i>=1; i--) {                                    memHits+=2;
             swapElements(0, i);
@@ -24,6 +25,7 @@ public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
             maxHeapify(0);
         }
 
+        // Sort complete. Set flag to true unless hardware failure
         memHits++;
         sortComplete = !virtualHardwareFailure();
     }
@@ -49,10 +51,10 @@ public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
         int rc = rightChild(i);                                                             memHits++;
 
         int largest = i;                                                                    memHits+=2;
-        if (lc < heapSize && sortedValues[lc].compareTo(sortedValues[i]) > 0) {             memHits+=4;
+        if (lc < heapSize && sortedValues[lc] > sortedValues[i]) {                          memHits+=4;
             largest = lc;                                                                   memHits+=2;
         }
-        if (rc < heapSize && sortedValues[rc].compareTo(sortedValues[largest]) > 0) {       memHits+=4;
+        if (rc < heapSize && sortedValues[rc] > sortedValues[largest]) {                    memHits+=4;
             largest = rc;                                                                   memHits+=2;
         }
         if (largest != i) {                                                                 memHits+=2;
@@ -98,7 +100,7 @@ public class HeapSort<T extends Comparable<? super T>> extends Sorter<T>{
             return;
         }
 
-        T temp = sortedValues[index1];                                                      memHits++;
+        Integer temp = sortedValues[index1];                                                memHits++;
         sortedValues[index1] = sortedValues[index2];                                        memHits++;
         sortedValues[index2] = temp;                                                        memHits++;
     }

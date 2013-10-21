@@ -2,22 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4784f4da-fbd3-4371-92dd-589d460ceab7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CInsertionSort.java" afterPath="$PROJECT_DIR$/src/CInsertionSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataGenerator.java" afterPath="$PROJECT_DIR$/src/DataGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataSorter.java" afterPath="$PROJECT_DIR$/src/DataSorter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HeapSort.java" afterPath="$PROJECT_DIR$/src/HeapSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sorter.java" afterPath="$PROJECT_DIR$/src/Sorter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FaultTolerance.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/DataGenerator.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382297239794" ignored="false" />
-    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304569264" ignored="false" />
-    <file path="/fragment.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382296452548" ignored="false" />
+    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304609496" ignored="false" />
+    <file path="/fragment.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382311364365" ignored="false" />
     <file path="/TestStopMethod.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382208631585" ignored="false" />
     <file path="/Driver.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382229363662" ignored="false" />
     <file path="/FileHelper.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382298118292" ignored="false" />
-    <file path="/DataSorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382298965898" ignored="false" />
-    <file path="/HeapSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382298342610" ignored="false" />
+    <file path="/DataSorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382316067486" ignored="false" />
+    <file path="/HeapSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382314533152" ignored="false" />
     <file path="/InsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304420333" ignored="false" />
-    <file path="/Sorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382301779283" ignored="false" />
+    <file path="/Sorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382309850961" ignored="false" />
     <file path="/SortedIntegerCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382232774453" ignored="false" />
     <file path="/SortedCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382298165492" ignored="false" />
+    <file path="/CInsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382314453635" ignored="false" />
+    <file path="/lib_insertSort.c" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382314226168" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +85,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib_binsearch.c" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../NativeMethods/lib_binsearch.c">
+      <file leaf-file-name="DataGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="30" column="22" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSorter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="12" selection-start="1839" selection-end="1846" vertical-scroll-proportion="0.9039451">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,25 +110,25 @@
       <file leaf-file-name="CInsertionSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CInsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="56" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+            <state line="22" column="66" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib_insertSort.c" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="lib_insertSort.c" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib_insertSort.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="14" selection-start="557" selection-end="557" vertical-scroll-proportion="0.6123499">
+            <state line="34" column="3" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sorter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sorter.java">
+      <file leaf-file-name="FileHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="31" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+            <state line="39" column="27" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +137,27 @@
       <file leaf-file-name="HeapSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
+            <state line="27" column="66" selection-start="946" selection-end="1013" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyBinarySearch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../NativeMethods/MyBinarySearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sorter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="75" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,19 +183,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../Watchdog/TestStopMethod.java" />
-        <option value="$PROJECT_DIR$/../Watchdog/src/TestStopMethod.java" />
-        <option value="$PROJECT_DIR$/../Watchdog/src/Driver.java" />
         <option value="$PROJECT_DIR$/src/SortedIntegerCheck.java" />
         <option value="$PROJECT_DIR$/src/Watchdog.java" />
         <option value="$PROJECT_DIR$/src/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/SortedCheck.java" />
-        <option value="$PROJECT_DIR$/src/DataSorter.java" />
         <option value="$PROJECT_DIR$/src/DataGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Sorter.java" />
         <option value="$PROJECT_DIR$/src/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/sorter/DataSorter.java" />
+        <option value="$PROJECT_DIR$/src/sorter/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/sorter/HeapSort.java" />
+        <option value="$PROJECT_DIR$/src/generator/DataGenerator.java" />
+        <option value="$PROJECT_DIR$/src/sorter/CInsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/lib_insertSort.c" />
         <option value="$PROJECT_DIR$/src/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/CInsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/DataSorter.java" />
       </list>
     </option>
   </component>
@@ -299,6 +342,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tanner\Google Drive\School\5th\ECE_422\FaultTolerance\src" />
+      <recent name="C:\Users\Tanner\Google Drive\School\5th\ECE_422\FaultTolerance\src\sorter" />
     </key>
   </component>
   <component name="RunManager" selected="Application.DataSorter">
@@ -505,7 +552,11 @@
       <created>1382304574786</created>
       <updated>1382304574786</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="CInsertionSort first attempt">
+      <created>1382304614083</created>
+      <updated>1382304614083</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -515,6 +566,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -526,10 +578,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13820705" sideWeight="0.67070484" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -607,11 +658,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="13" selection-start="12473" selection-end="12473" vertical-scroll-proportion="-2.89819" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/lang/reflect/Type.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="17" selection-start="468" selection-end="468" vertical-scroll-proportion="0.24085006" />
@@ -641,75 +687,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="9" selection-start="5650" selection-end="5650" vertical-scroll-proportion="0.55172414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1719" selection-end="1828" vertical-scroll-proportion="0.6361868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../NativeMethods/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.35071942">
+        <state line="41" column="44" selection-start="1022" selection-end="1054" vertical-scroll-proportion="0.58947366">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="54" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.8336714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../NativeMethods/MyBinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5521368">
+        <state line="30" column="22" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#479#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../NativeMethods/lib_binsearch.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CInsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="56" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+        <state line="19" column="16" selection-start="484" selection-end="484" vertical-scroll-proportion="-0.4871355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib_insertSort.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="557" selection-end="557" vertical-scroll-proportion="0.6123499">
+        <state line="34" column="3" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="66" selection-start="946" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NativeMethods/MyBinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="27" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="75" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CInsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="66" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="12" selection-start="1839" selection-end="1846" vertical-scroll-proportion="0.9039451">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
