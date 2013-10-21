@@ -23,8 +23,8 @@ Thread watched;
 	 * @see java.lang.Runnable#run()
 	 */
 	public void run() {
-		
-		watched.stop();
+
+        watched.stop();
 	}
 
 }

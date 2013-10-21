@@ -26,7 +26,12 @@ public abstract class Sorter extends Thread{
      */
     @Override
     public void run() {
-        this.sort();
+        try {
+            this.sort();
+        } catch (ThreadDeath td) {
+            System.out.println("Timeout occured");
+            throw new ThreadDeath();
+        }
     }
 
     /**

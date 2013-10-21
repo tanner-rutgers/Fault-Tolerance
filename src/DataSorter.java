@@ -16,8 +16,8 @@ import java.util.Timer;
 public class DataSorter {
 
     static Integer[] originalValues;
-    static final Sorter primarySort = new HeapSort();
-    static final Sorter[] backupSorts = new Sorter[] { new CInsertionSort() };
+    static final String primarySortClass = "HeapSort";
+    static final String[] backupSortClasses = new String[] { "CInsertionSort" };
 
     public static void main(String[] args) {
     	if (args.length == 1 && args[0].equals("--help")) {
@@ -44,29 +44,48 @@ public class DataSorter {
                     originalValues[i] = Integer.parseInt(values[i]);
                 }
 
-                // Run primary sorting algorithm
-                runSort(primarySort, timeout, primFail);
                 try {
-                    // Check if primary sorter finished and run adjudicator results, exit if successful
-                    if (primarySort.didFinish() && SortedCheck.checkSorted(originalValues, primarySort.getSortedValues(), true)) {
-                        FileHelper.writeToFile(outFile, primarySort.getSortedValues());
-                        System.exit(0);
-                    } else {
-                        // Primary failed, print message indicating so
-                        System.out.println("Primary sorter '" + primarySort.getClass().getName() + "' failed.");
-                        // Run all backups one by one
-                        for (Sorter backupSort : backupSorts) {
+                    try {
+                        // Create a new thread for primary sorter
+                        Sorter primarySort = (Sorter)Class.forName(primarySortClass).getConstructor().newInstance();
+
+                        // Run primary sorting algorithm
+                        runSort(primarySort, timeout, primFail);
+
+                        // Check if primary sorter finished and run adjudicator results, exit if successful
+                        if (primarySort.didFinish() && SortedCheck.checkSorted(originalValues, primarySort.getSortedValues(), true)) {
+                            FileHelper.writeToFile(outFile, primarySort.getSortedValues());
+                            System.exit(0);
+                        }
+                    } catch (ReflectiveOperationException ex) {
+                        System.out.println("Could not create thread for " + primarySortClass);
+                    }
+                    // Primary failed, print message indicating so
+                    System.out.println("Primary sorter failed");
+                    // Run all backups one by one
+                    for (String backupSortClass : backupSortClasses) {
+                        try {
+                            // Re-read values from specified file (checkpoint)
+                            values = FileHelper.readFromFile(inFile);
+                            originalValues = new Integer[values.length];
+                            for (int i = 0; i<values.length; i++) {
+                                originalValues[i] = Integer.parseInt(values[i]);
+                            }
+                            // Create a new thread for the backup sorter
+                            Sorter backupSort = (Sorter)Class.forName(backupSortClass).getConstructor().newInstance();
                             runSort(backupSort, timeout, backFail);
                             // Check if backup sorter finished and run adjudicator results, exit if successful
                             if (backupSort.didFinish() && SortedCheck.checkSorted(originalValues, backupSort.getSortedValues(), true)) {
                                 FileHelper.writeToFile(outFile, backupSort.getSortedValues());
                                 System.exit(0);
                             }
+                        } catch (ReflectiveOperationException ex) {
+                            System.out.println("Could not create thread for " + backupSortClass);
                         }
-                        // All backups failed. Print failure message and delete output file.
-                        System.out.println("All backup sorters failed.");
-                        (new File(outFile)).delete();
                     }
+                    // All backups failed. Print failure message and delete output file.
+                    System.out.println("All backup sorters failed.");
+                    (new File(outFile)).delete();
                 } catch (IOException ex) {
                     System.out.println("Could not write to file " + outFile);
                 }
@@ -121,10 +140,10 @@ public class DataSorter {
         result.append(this.getClass().getName() + " Object {" + NEW_LINE);
         result.append("Original Values size: ");
         result.append((originalValues != null ? originalValues.length : "0") + NEW_LINE);
-        result.append("Primary sorting routine: " + primarySort.getClass().getName() + NEW_LINE);
-        for (int i = 0; i < backupSorts.length; i++) {
+        result.append("Primary sorting routine: " + primarySortClass + NEW_LINE);
+        for (int i = 0; i < backupSortClasses.length; i++) {
             result.append("Backup sorting routine " + i + ": ");
-            result.append(backupSorts[i].getClass().getName() + NEW_LINE);
+            result.append(backupSortClasses[i].getClass().getName() + NEW_LINE);
         }
         result.append("}");
 
