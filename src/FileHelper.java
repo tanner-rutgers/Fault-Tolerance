@@ -14,7 +14,7 @@ public class FileHelper {
      * @return String[] of all values found
      * @throws IOException if cannot read from file
      */
-    public static String[] readFile(String filename) throws IOException{
+    public static String[] readFromFile(String filename) throws IOException{
         BufferedReader reader = null;
         String[] values;
 

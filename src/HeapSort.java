@@ -13,7 +13,7 @@ public class HeapSort extends Sorter{
      * Details about arguments can be found in <code>Sorter</code>
      */
     @Override
-    public void sort(Integer[]... values) {
+    protected void sort(Integer[]... values) {
         if (values.length == 1) sortedValues = values[0];                                   memHits+=3;
         if (sortedValues == null) return;                                                   memHits++;
 

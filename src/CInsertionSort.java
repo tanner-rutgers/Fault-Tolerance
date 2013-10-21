@@ -1,7 +1,7 @@
 public class CInsertionSort extends Sorter{
 
     @Override
-    public void sort(Integer[]... values) {
+    protected void sort(Integer[]... values) {
         if (values.length == 1) sortedValues = values[0];                               memHits+=3;
         if (this.sortedValues == null) return;                                          memHits++;
 

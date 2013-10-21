@@ -18,14 +18,13 @@ import java.util.Random;
 public class DataGenerator {
 
     public static void main(String[] args) {
-        if (args.length != 2) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("Invalid Syntax. Please use:\n\n")
-                    .append("\tjava DataGenerator <filename> <datasize>\n\n")
-                    .append("Where <filename> is the name of the file in the current directory \n")
-                    .append("you wish to write to and <datasize> is the number of random integers \n")
-                    .append("you wish to write.");
-            System.out.println(sb.toString());
+    	if (args.length == 1 && args[0].equals("--help")) {
+    		System.out.println("DataGenerator generates random integers and writes them to a file.");
+    		System.out.println("Syntax for running DataGenerator is as follows:\n");
+    		printSyntax();
+    	} else if (args.length != 2) {
+        	System.out.println("Invalid Syntax. Please use:\n");
+        	printSyntax();
         } else {
             try {
                 FileHelper.writeToFile(args[0], getRandomInts(Integer.parseInt(args[1])));
@@ -55,6 +54,18 @@ public class DataGenerator {
         return randoms;
     }
 
+    /**
+     * Prints the proper syntax for running DataGenerator
+     */
+    private static void printSyntax() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\tjava DataGenerator <filename> <datasize>\n\n")
+                .append("Where <filename> is the name of the file in the current directory \n")
+                .append("you wish to write to and <datasize> is the number of random integers \n")
+                .append("you wish to write.");
+        System.out.println(sb.toString());
+    }
+    
     @Override
     public String toString() {
         return this.getClass().getName() + "Class Object";

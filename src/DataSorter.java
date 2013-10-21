@@ -20,17 +20,14 @@ public class DataSorter {
     static final Sorter[] backupSorts = new Sorter[] { new CInsertionSort() };
 
     public static void main(String[] args) {
+    	if (args.length == 1 && args[0].equals("--help")) {
+    		System.out.println("DataSorter is a fault-tolerant sorting program.");
+    		System.out.println("Syntax for running DataSorter is as follows:\n");
+    		printSyntax();
+    	}
         if (args.length != 5) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("Invalid Syntax. Please use:\n\n")
-                    .append("\tjava DataSorter <inFile> <outFile> <primFail> <backFail> <timeout> \n\n")
-                    .append("Where:\n\n")
-                    .append("\tinFile = input file with values to sort\n")
-                    .append("\toutFile = output file to write sorted values to\n")
-                    .append("\tprimFail = failure probability of primary sorting routine\n")
-                    .append("\tbackFail = failure probability of backup sorting routine\n")
-                    .append("\ttimeout = number of seconds to wait for each sorting routine\n");
-            System.out.println(sb.toString());
+            System.out.println("Invalid Syntax. Please use:\n");
+            printSyntax();
         } else {
             // Collect command line arguments
             String inFile = args[0];
@@ -41,7 +38,7 @@ public class DataSorter {
 
             try {
                 // Collect values to be sorted from specified file
-                String[] values = FileHelper.readFile(inFile);
+                String[] values = FileHelper.readFromFile(inFile);
                 originalValues = new Integer[values.length];
                 for (int i = 0; i<values.length; i++) {
                     originalValues[i] = Integer.parseInt(values[i]);
@@ -99,6 +96,21 @@ public class DataSorter {
             sorter.join();
             t.cancel();
         } catch (InterruptedException e) {}
+    }
+    
+    /**
+     * Prints the proper syntax for running DataSorter
+     */
+    private static void printSyntax() {
+    	StringBuilder sb = new StringBuilder();
+        sb.append("\tjava DataSorter <inFile> <outFile> <primFail> <backFail> <timeout> \n\n")
+                .append("Where:\n\n")
+                .append("\tinFile = input file with values to sort\n")
+                .append("\toutFile = output file to write sorted values to\n")
+                .append("\tprimFail = failure probability of primary sorting routine\n")
+                .append("\tbackFail = failure probability of backup sorting routine\n")
+                .append("\ttimeout = number of seconds to wait for each sorting routine\n");
+        System.out.println(sb.toString());	
     }
 
     @Override

@@ -52,7 +52,7 @@ public abstract class Sorter extends Thread{
      * <code>originalValues</code>.  Sorted values should be
      * stored in the global variable <code>sortedValues</code>
      */
-    public abstract void sort(Integer[]... values);
+    protected abstract void sort(Integer[]... values);
 
     @Override
     public String toString() {
