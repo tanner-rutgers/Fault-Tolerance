@@ -44,21 +44,21 @@ public class HeapSort extends Sorter{
     /**
      * Turns the partial max heap with root at index <code>i</code>
      * into a max heap
-     * @param i Index of root node in partial max heap
+     * @param root Index of root node in partial max heap
      */
-    private void maxHeapify(int i) {
-        int lc = leftChild(i);                                                              memHits++;
-        int rc = rightChild(i);                                                             memHits++;
+    private void maxHeapify(int root) {
+        int lc = leftChild(root);                                                           memHits++;
+        int rc = rightChild(root);                                                          memHits++;
 
-        int largest = i;                                                                    memHits+=2;
-        if (lc < heapSize && sortedValues[lc] > sortedValues[i]) {                          memHits+=4;
+        int largest = root;                                                                 memHits+=2;
+        if (lc < heapSize && sortedValues[lc] > sortedValues[root]) {                       memHits+=4;
             largest = lc;                                                                   memHits+=2;
         }
         if (rc < heapSize && sortedValues[rc] > sortedValues[largest]) {                    memHits+=4;
             largest = rc;                                                                   memHits+=2;
         }
-        if (largest != i) {                                                                 memHits+=2;
-            swapElements(i, largest);
+        if (largest != root) {                                                              memHits+=2;
+            swapElements(root, largest);
             maxHeapify(largest);
         }
     }

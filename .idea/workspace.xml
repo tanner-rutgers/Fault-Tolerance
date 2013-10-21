@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4784f4da-fbd3-4371-92dd-589d460ceab7" name="Default" comment="Cleanup">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataGenerator.jpg" afterPath="$PROJECT_DIR$/DataGenerator.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CInsertionSort.java" afterPath="$PROJECT_DIR$/src/CInsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataGenerator.java" afterPath="$PROJECT_DIR$/src/DataGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataSorter.java" afterPath="$PROJECT_DIR$/src/DataSorter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileHelper.java" afterPath="$PROJECT_DIR$/src/FileHelper.java" />
+    <list default="true" id="4784f4da-fbd3-4371-92dd-589d460ceab7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HeapSort.java" afterPath="$PROJECT_DIR$/src/HeapSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sorter.java" afterPath="$PROJECT_DIR$/src/Sorter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FaultTolerance.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/DataGenerator.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382297239794" ignored="false" />
-    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323737700" ignored="false" />
+    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323967627" ignored="false" />
     <file path="/fragment.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382311364365" ignored="false" />
     <file path="/TestStopMethod.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382208631585" ignored="false" />
     <file path="/Driver.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382229363662" ignored="false" />
     <file path="/FileHelper.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382322462997" ignored="false" />
     <file path="/DataSorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382322482614" ignored="false" />
-    <file path="/HeapSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323595004" ignored="false" />
+    <file path="/HeapSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323999315" ignored="false" />
     <file path="/InsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304420333" ignored="false" />
     <file path="/Sorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323374452" ignored="false" />
     <file path="/SortedIntegerCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382232774453" ignored="false" />
@@ -98,7 +92,7 @@
       <file leaf-file-name="HeapSort.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="357" selection-end="357" vertical-scroll-proportion="0.31326783">
+            <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.5012285">
               <folding />
             </state>
           </provider>
@@ -183,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/DataSorter.java" />
         <option value="$PROJECT_DIR$/src/Sorter.java" />
         <option value="$PROJECT_DIR$/src/CInsertionSort.java" />
-        <option value="$PROJECT_DIR$/src/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/Watchdog.java" />
+        <option value="$PROJECT_DIR$/src/HeapSort.java" />
       </list>
     </option>
   </component>
@@ -220,6 +214,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,22 +284,21 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -322,8 +316,8 @@
     <property name="options.lastSelected" value="com.advancedtools.cpp.CppSupportSettings" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -365,19 +359,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -403,6 +384,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -542,7 +536,11 @@
       <created>1382304614083</created>
       <updated>1382304614083</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleanup">
+      <created>1382323785739</created>
+      <updated>1382323785739</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,7 +611,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="CInsertionSort first attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -635,6 +633,7 @@
     <MESSAGE value="Finished heap sort, cleaned up and commented others (executive etc.)" />
     <MESSAGE value="Cleaned up existing classes" />
     <MESSAGE value="CInsertionSort first attempt" />
+    <MESSAGE value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -753,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="357" selection-end="357" vertical-scroll-proportion="0.31326783">
+        <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.5012285">
           <folding />
         </state>
       </provider>
