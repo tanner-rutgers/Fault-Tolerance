@@ -104,8 +104,8 @@ public class DataSorter {
      * @param failureProb Probability of each memory access failing
      */
     private static void runSort(Sorter sorter, Integer timeout, Double failureProb) {
-        Timer t = new Timer();
         Watchdog w = new Watchdog(sorter);
+        Timer t = new Timer();
 
         sorter.setValues(originalValues);
         sorter.setFailureProbability(failureProb);
