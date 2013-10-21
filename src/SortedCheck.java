@@ -18,7 +18,7 @@ public class SortedCheck {
      *          sorted version of <code>original</code> based on
      *          mentioned conditions.
      */
-    public static <T extends Comparable<? super T>> boolean checkSorted(final T[] original, final T[] sorted, Boolean increasing) {
+    public static <T extends Comparable<? super T>> Boolean checkSorted(final T[] original, final T[] sorted, Boolean increasing) {
         if (sorted == null || increasing == null) return false;
 
         if (original != null) {
@@ -36,7 +36,7 @@ public class SortedCheck {
      *                   false for decreasing order
      * @return true if monotonic, false otherwise
      */
-    private static <T extends Comparable<? super T>> boolean checkMonotonic(final T[] sorted, boolean increasing) {
+    private static <T extends Comparable<? super T>> Boolean checkMonotonic(final T[] sorted, boolean increasing) {
         if (sorted.length <= 0) return false;
 
         if (increasing) {

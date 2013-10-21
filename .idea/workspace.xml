@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4784f4da-fbd3-4371-92dd-589d460ceab7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HeapSort.java" afterPath="$PROJECT_DIR$/src/HeapSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SortedCheck.java" afterPath="$PROJECT_DIR$/src/SortedCheck.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FaultTolerance.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/DataGenerator.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382297239794" ignored="false" />
-    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323967627" ignored="false" />
+    <file path="/Dummy.txt" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382324021366" ignored="false" />
     <file path="/fragment.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382311364365" ignored="false" />
     <file path="/TestStopMethod.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382208631585" ignored="false" />
     <file path="/Driver.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382229363662" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="/InsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382304420333" ignored="false" />
     <file path="/Sorter.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323374452" ignored="false" />
     <file path="/SortedIntegerCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382232774453" ignored="false" />
-    <file path="/SortedCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382298165492" ignored="false" />
+    <file path="/SortedCheck.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382324846717" ignored="false" />
     <file path="/CInsertionSort.java" changelist="4784f4da-fbd3-4371-92dd-589d460ceab7" time="1382323585425" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,10 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapSort.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SortedCheck.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SortedCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="68" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.4187192">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeapSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.5012285">
+            <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,7 +174,6 @@
       <list>
         <option value="$PROJECT_DIR$/../Watchdog/src/Driver.java" />
         <option value="$PROJECT_DIR$/src/SortedIntegerCheck.java" />
-        <option value="$PROJECT_DIR$/src/SortedCheck.java" />
         <option value="$PROJECT_DIR$/src/DataGenerator.java" />
         <option value="$PROJECT_DIR$/src/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/sorter/DataSorter.java" />
@@ -179,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/CInsertionSort.java" />
         <option value="$PROJECT_DIR$/src/Watchdog.java" />
         <option value="$PROJECT_DIR$/src/HeapSort.java" />
+        <option value="$PROJECT_DIR$/src/SortedCheck.java" />
       </list>
     </option>
   </component>
@@ -540,7 +549,11 @@
       <created>1382323785739</created>
       <updated>1382323785739</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Cleanup">
+      <created>1382324024701</created>
+      <updated>1382324024701</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -552,19 +565,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07692308" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07709251" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32197803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12433298" sideWeight="0.9230769" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12433298" sideWeight="0.9229075" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -671,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortedCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="59" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../NativeMethods/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.35071942">
@@ -722,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Watchdog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
@@ -752,7 +751,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.5012285">
+        <state line="59" column="92" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="68" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.4187192">
           <folding />
         </state>
       </provider>
